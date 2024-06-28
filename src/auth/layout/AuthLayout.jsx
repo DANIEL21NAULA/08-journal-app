@@ -1,5 +1,6 @@
 import { Grid, Typography } from '@mui/material';
 import PropTypes from 'prop-types';
+// import 'animate.css';
 
 export const AuthLayout = ({ children, title }) => (
   <Grid

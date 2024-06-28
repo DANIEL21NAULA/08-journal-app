@@ -21,21 +21,23 @@ export const JournalPage = () => (
         aaIpsum duis incididunt cillum ut pariatur ad commodo.
         Anim ullamco aliquip aliqua enim nostrud ea amet aliqua dolore sint.
       </Typography> */}
-      <NothingSelectedView />
-      {/* <NoteView /> */}
-      <IconButton
-        size="large"
-        sx={{
-          color: 'white',
-          background: 'error.main',
-          ':hover': { backgroundColor: 'error.main', opacity: 0.9 },
-          position: 'fixed',
-          right: 50,
-          bottom: 50,
-        }}
-      >
-        <AddOutlined sx={{ fontSize: 30 }} />
-      </IconButton>
+      <>
+        <NothingSelectedView />
+        {/* <NoteView /> */}
+        <IconButton
+          size="large"
+          sx={{
+            color: 'white',
+            backgroundColor: 'error.main',
+            ':hover': { backgroundColor: 'error.main', opacity: 0.9 },
+            position: 'fixed',
+            right: 50,
+            bottom: 50,
+          }}
+        >
+          <AddOutlined sx={{ fontSize: 30 }} />
+        </IconButton>
+      </>
     </JournalLayout>
   </>
 );
