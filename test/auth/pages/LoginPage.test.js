@@ -64,7 +64,7 @@ describe('Pruebas en <LoginPage />', () => {
   });
 
   test('debe de llamar startLoginWithEmailPassword cuando envie submit', () => {
-    const email = 'danieljnaula@gmail.com';
+    const email = 'danieljnaulasuper@gmail.com';
     const password = '1234567';
     render(
       <Provider store={store}>
