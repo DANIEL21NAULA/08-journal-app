@@ -59,7 +59,6 @@ export const RegisterPage = () => {
         onSubmit={handleSubmit}
         className="animate__animated animate__fadeIn animate_faster"
       >
-        <h1>{ formSubmitted ? 'Valido' : 'novalido' }</h1>
         <Grid container>
           <Grid
             item

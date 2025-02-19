@@ -15,6 +15,7 @@ export const useForm = (initialForm = {}, formValidations = {}) => {
     }
     setFormValidation(formCheckedValues);
   };
+
   const isFormValid = useMemo(() => {
     const keysForms = Object.keys(formValidation);
     // eslint-disable-next-line no-plusplus
@@ -31,6 +32,10 @@ export const useForm = (initialForm = {}, formValidations = {}) => {
     createValidators();
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [formState]);
+
+  useEffect(() => {
+    setFormState(initialForm);
+  }, [initialForm]);
 
   const onInputChange = ({ target }) => {
     const { name, value } = target;
